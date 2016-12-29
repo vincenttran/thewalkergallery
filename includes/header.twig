@@ -1,0 +1,17 @@
+<!-- Header -->
+<header class="template-header">
+    <div class="header-wrapper">
+        <div class="headercontent-wrapper">
+            <div class="header-logo">
+                {{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            </div>
+        </div>
+        {% if plugins.ecommerce.store.live %}
+        <div class="header-basket">
+            {{widget('ecombasket', 'shopbasket', {})|raw}}
+        </div>
+        {% endif %}
+    </div>
+</header>
+
+<!-- End Header -->

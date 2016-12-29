@@ -1,0 +1,190 @@
+// --------------------------------
+// BaseKit Baseplate Theme (v2.0)
+// --------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+
+
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+
+@import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
+
+// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
+//    your template to guarentee widgets come to life. Proivides default styles for all widgets.
+
+// Template Includes
+@import "@{templateLocal}/less/theme.less"; // Theme
+@import "@{templateLocal}/less/widgets.less"; // Widgets
+@import "@{templateLocal}/less/mixins.less"; // Mixins
+@import "@{templateLocal}/less/navigation.less"; // Navigation
+
+// Plugin Includes
+@import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
+@import "@{templateLocal}/less/plugins/plugin-menu.less"; // Plugin: Menu CSS
+@import "@{templateLocal}/less/plugins/plugin-ecommerce.less"; // Plugin: Ecommerce CSS
+
+// Feature Variables Fallback
+@color__feature-headline--text: transparent;
+@font__feature-headline--font-family : @font-swatch8-font-family;
+@font__feature-headline--font-size : @font-swatch8-font-size;
+@font__feature-headline--font-weight : @font-swatch8-font-weight;
+@font__feature-headline--line-height : @font-swatch8-line-height;
+@font__feature-headline--letter-spacing : @font-swatch8-letter-spacing;
+
+@color__feature-strapline--text: transparent;
+@font__feature-strapline--font-family : @font-swatch9-font-family;
+@font__feature-strapline--font-size : @font-swatch9-font-size;
+@font__feature-strapline--font-weight : @font-swatch9-font-weight;
+@font__feature-strapline--line-height : @font-swatch9-line-height;
+@font__feature-strapline--letter-spacing : @font-swatch9-letter-spacing;
+
+
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+// ** Styles for advanced Baseplate template - remove when developing a custom template
+
+
+// Body
+// --------------
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: @color__body--background;
+    & > * {
+        flex: 0 0 auto;
+    }
+    & > .container,
+    & > .bk-pt-default {
+        flex: 1 0 auto;
+    }
+}
+
+// Page Container
+// --------------
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	@media @tablet {
+        margin: 0;
+		padding-left: 4%;
+        padding-right: 4%;
+	}
+}
+
+
+// Header Wrapper
+// --------------
+
+.header-wrapper {
+	width: 100%;
+	// Layout
+	padding: 40px 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+	@media @tablet {
+		display: block;
+		padding: 15px 4% 15px;
+	}
+}
+
+
+// #Default Page
+// -------------
+
+// Sticky Footer
+.bk-pt-default {
+    flex: 1;
+}
+
+.bk-pt-default .container {
+    width: 100%;
+    @media @tablet {
+        padding: 2%!important;
+    }
+}
+
+// Default Page Title
+.template-title {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: @color-swatch7;
+    @media @tablet {
+        padding: 20px;
+    }
+}
+
+
+
+
+// -----------------------------
+// 3. #Template Styles
+// -----------------------------
+
+.template-content {
+	width: 100%;
+	margin: 0px auto;
+	@media @tablet {
+		width:100%;
+	}
+}
+
+.widget--zone-widget {
+    margin: 0 0 20px;
+}
+
+
+
+
+// -----------------------------
+// 4. #Variables 
+// -----------------------------
+
+//@import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/less/variables.less"; 

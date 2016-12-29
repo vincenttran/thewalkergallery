@@ -1,0 +1,61 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<div class="profile-header">
+    <div class="header-extendednavigation">
+        {{widget('extendednavigation', 'extendednavigation', { 'align': 'center'})|raw}}
+    </div>
+</div>
+
+<div class="homepage-slideshow">
+	{{widget('responsiveslideshow', 'slideshow', {
+	    'duration':'3',
+	    'transSpeed': '1000',
+	    'transType': 'fade',
+	    'showButtons': true,
+	    'showBullets': false,
+	    'allowPause': false,
+	    'allowLoop': true,
+	    'images':[
+	      {
+	        'imageHeight':'400',
+	        'imageWidth':'1000',
+	        'url':asset('/images/slideshow/slideshow-1.jpg'),
+            'title':'First slide title',
+            'description': 'First slide description'
+	      },
+	      {
+	        'imageHeight':'400',
+	        'imageWidth':'1000',
+	        'url':asset('/images/slideshow/slideshow-2.jpg'),
+            'title':'First slide title',
+            'description': 'First slide description'
+	      },
+	      {
+	        'imageHeight':'400',
+	        'imageWidth':'1000',
+	        'url':asset('/images/slideshow/slideshow-3.jpg'),
+            'title':'First slide title',
+            'description': 'First slide description'
+	      }
+	    ]
+	})|raw}}
+</div>
+
+	<!-- Page Content -->
+	<section class="template-content">
+        <div class="container">
+
+		    <!-- Main Widet Zone -->
+	   	    {{zone('main')|raw}}
+
+        </div>
+	</section>
+	<!-- End Page Content -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
