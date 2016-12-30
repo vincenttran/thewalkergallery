@@ -15,13 +15,13 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#EDEDED",
+            "color1":"#ffffff",
             "color2":"#ca1414",
             "color3":"#000000",
             "color4":"#2b3040",
             "color5":"#2b3040",
             "color6":"#FFFFFF",
-            "color7":"#FFFFFF"
+            "color7":"#EEEEEE"
         },
         "Swatch 2": {
             "color1":"#FFFFFF",
