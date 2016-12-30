@@ -171,6 +171,10 @@
         border-radius: 0;
         outline: 0;
         border: 0;
+        background-color: transparent;
+        &:hover {
+            background-color: transparent;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -181,8 +185,8 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch7;
-            box-shadow: 0 6px 0 @color-swatch7;
+            background: black;
+            box-shadow: 0 6px 0 black;
             .transition( all, 0.5s, ease );
         }
         &:after {
@@ -195,27 +199,27 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch7;
+            background: black;
             .transition( all, 0.5s, ease );
         }
     }
     .navigation-toggle:hover {
         border: 0;
             &:before {
-                background: @color-swatch7;
-                box-shadow: 0 6px 0 @color-swatch7;
+                background: black;
+                box-shadow: 0 6px 0 black;
             }
             &:after {
-                background: @color-swatch7;
+                background: black;
             }
     }
     // Toggle Button Open State
     .open & {
         &.navigation-toggle {
-            background-color: @color-swatch3;
+            background-color: transparent;
             &:before {
                 margin-top: 21px;
-                background: @color-swatch7;
+                background: black;
                 box-shadow: none;
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
@@ -234,7 +238,7 @@
                 right: 0;
                 margin-top: 21px;
                 margin-left: -13px;
-                background: @color-swatch7;
+                background: black;
                 box-shadow: none;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);

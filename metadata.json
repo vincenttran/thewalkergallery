@@ -64,41 +64,41 @@
        "title": "Times New Roman, serif",
         "font1": {
             "font-family": "\"Times New Roman\", serif",
-            "font-size": "26px",
+            "font-size": "36px",
             "font-weight": "300",
-            "line-height": "34px",
+            "line-height": "46px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font2": {
             "font-family": "\"Times New Roman\", serif",
-            "font-size": "24px",
+            "font-size": "30px",
             "font-weight": "300",
-            "line-height": "32px",
+            "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font3": {
             "font-family": "\"Times New Roman\", serif",
-            "font-size": "22px",
+            "font-size": "26px",
             "font-weight": "300",
-            "line-height": "30px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font4": {
             "font-family": "\"Times New Roman\", serif",
             "font-size": "18px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font5": {
             "font-family": "\"Times New Roman\", serif",
-            "font-size": "15px",
+            "font-size": "18px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
