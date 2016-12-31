@@ -1,9 +1,50 @@
+<div class="above-footer">
+
+<div class="grey-footer container">
+
+    <div class="left">
+
+    {{widget('content', 'sidebarcontent', {
+  content: '<p>Lorem ipsum dolor sit amet...</p>'
+})|raw}}
+
+    </div>
+
+    <div class="center">
+
+    {{widget('content', 'sidebarcontent', {
+  content: '<p>Lorem ipsum dolor sit amet...</p>'
+})|raw}}
+
+    </div>
+
+    <div class="right">
+
+    {{widget('profile', 'profilearea', {
+  'profileType':'twitter',
+  'twitter':'profile',
+  'refreshtime':'1800000'
+})|raw}}
+
+    </div>
+
+    </div>
+
+
+</div>
+
+
+
 <!-- Footer -->
 <footer class="template-footer">
 
-	<div class="container">
+	<div class="footer container">
+    <div class="footer-left">
         {{widget('profile', 'footerprofilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+        <div class="footer-right">
         {{widget('profile', 'footerprofilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </div>
 	</div>
 
 </footer>

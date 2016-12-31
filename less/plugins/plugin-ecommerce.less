@@ -190,7 +190,7 @@
 
 .ecomproduct__category-link,
 .ecomproduct__tag-link {
-    color: @color-swatch2;
+    color: black;
 }
 
 .ecomproduct__select-wrap,
@@ -220,7 +220,11 @@
     text-align: center;
 }
 
-
+.ecombasketsummary__summary-item-title {
+    a {
+        color: black;
+    }
+}
 
 
 // -----------------------------
@@ -257,19 +261,22 @@
 
 .ecomproductslist__product-item-title,
 .ecomfeaturedproducts__product-item-title {
-    width: 60%;
-    float: left;
+    text-align: center;
     display: inline-block;
-    text-align: left;
-    font-size: @font__h4--font-size;
-    line-height: @font__h4--line-height;
-    @media @tablet {
-        width: 100%;
-        margin-bottom: 5px;
+    font-size: 22px;
+    line-height: @font__h3--line-height;
+    color: black;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    a {
+        color: black;
     }
     @media @tablet {
         text-align: center;
         float: initial;
+        width: 100%;
+        margin-bottom: 5px;
     }
 }
 
@@ -326,13 +333,12 @@
 
 // Featured Products
 .ecomfeaturedproducts__product-content {
-    border: 1px solid @color-swatch7;
     padding: 10px 0;
 }
 
 .listing-pagination .pagination-item.current a {
     background-color: lighten(@color-swatch3, 20%);
-    color: @color__feature-strapline--text;
+    color: white;
 }
 
 .ecomproductslist__product-item-price, 
@@ -341,8 +347,7 @@
     display: inline-block;
     padding: 0 10px;
     color: white;
-    width: 30%;
-    float: right;
+    float: inherit;
     text-align: center;
     margin: 0px auto;
     display: table;
@@ -354,20 +359,6 @@
 // Product List Footer
 .ecomproductslist__listing-footer {
     margin-top: 20px;
-}
-
-.ecomproductslist__product-item-title, 
-.ecomfeaturedproducts__product-item-title {
-    width: 100%;
-    float: left;
-    display: block;
-    text-align: left;
-}
-
-.ecomproductslist__product-item-price, 
-.ecomfeaturedproducts__product-item-price {
-    float: left;
-    margin: 10px auto;
 }
 
 
@@ -491,7 +482,7 @@
     position: absolute;
     z-index: 99999;
     right: 0;
-    background-color: @color-swatch7;
+    background-color: white;
     padding: 20px 0px;
     min-width: 390px;
     top: 63px;
@@ -705,12 +696,18 @@
 
 .ecomproductslist__button,
 .ecomproductslist__button--clear {
-    padding: 4px 30px;
+    padding: 0px 30px;
 }
 
 .product-listing__form-group {
     @media @mobile {
         display:block;
+    }
+}
+
+.ecomproductslist__pagination-item {
+    .button {
+        padding: 8px 20px;
     }
 }
 
