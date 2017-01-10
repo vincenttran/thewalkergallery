@@ -223,7 +223,7 @@
         },
         "gallery": {
             "color__gallery--background": "@color-swatch7",
-            "color__gallery-caption--background": "@color-swatch3",
+            "color__gallery-caption--background": "fade(@color-swatch3,75%)",
             "color__gallery-title--text": "@font-swatch6-color",
             "color__gallery-description--text": "@font-swatch6-color"
         },
