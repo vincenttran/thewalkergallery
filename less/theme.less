@@ -302,7 +302,7 @@
     -ms-flex-align: start;
     align-items: flex-start;
 
-    padding: 40px 5%!important;
+    padding: 40px 9%!important;
     }
 
 .left {
@@ -315,7 +315,13 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    padding-right: 60px;
+
+    @media @tablet {
+        display: block;
+        width: 100%;
     }
+}
 
 .center {
     -webkit-order: 1;
@@ -330,7 +336,12 @@
     p {
         padding-bottom: 0;
     }
+
+    @media @tablet {
+        display: block;
+        width: 100%;
     }
+}
 
 .right {
     -webkit-order: 2;
@@ -342,7 +353,12 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+
+    @media @tablet {
+        display: block;
+        width: 100%;
     }
+}
 
 
 
