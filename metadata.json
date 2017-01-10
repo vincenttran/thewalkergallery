@@ -228,7 +228,7 @@
             "color__gallery-description--text": "@font-swatch6-color"
         },
         "forms": {
-            "color__form--background": "@color-swatch7",
+            "color__form--background": "@color-swatch1",
             "color__form-legend--text": "@color-swatch4"
         },
         "twitter": {
@@ -250,7 +250,7 @@
             "color__ecomproductslist-label--text": "@color-swatch4",
             "color__ecomproductslist-product-item--background": "@color-swatch1",
             "color__ecomproductslist-product-title--text": "@color-swatch4",
-            "color__ecomproduct--background": "@color-swatch7",
+            "color__ecomproduct--background": "#fff",
             "color__ecomproduct-title--text": "@font-swatch4-color",
             "color__ecomproduct-price--text": "@font-swatch4-color",
             "color__ecombasket--background": "transparent",
