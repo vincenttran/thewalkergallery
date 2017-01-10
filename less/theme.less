@@ -227,6 +227,9 @@
     .social-item {
         margin-bottom: 0;
     }
+    @media @tablet {
+        min-height: 60px;
+    }
 }
 
 .footer {
@@ -302,7 +305,13 @@
     -ms-flex-align: start;
     align-items: flex-start;
 
-    padding: 40px 9%!important;
+    padding: 40px 5%!important;
+    
+    @media @tablet {
+        padding: 40px 4%!important;
+        display: block;
+    }
+
     }
 
 .left {
@@ -320,6 +329,7 @@
     @media @tablet {
         display: block;
         width: 100%;
+        padding-right: 0;
     }
 }
 
@@ -594,6 +604,10 @@ input.input[type=search]:focus,
 
 .signupform__form-group {
     .clearfix
+}
+
+.signupform__form {
+    padding-top: 40px;
 }
 
 
