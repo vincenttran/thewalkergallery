@@ -4,6 +4,10 @@
 
     <div class="left">
 
+        {{widget('content', 'title1', {
+  content: '<p>About Us</p>'
+})|raw}}
+
     {{widget('content', 'abovefootercontent', {
   content: '<p>Lorem ipsum dolor sit amet...</p>'
 })|raw}}
@@ -12,6 +16,10 @@
 
     <div class="center">
 
+        {{widget('content', 'title2', {
+  content: '<p>Address</p>'
+})|raw}}
+
     {{widget('content', 'abovefootercontent1', {
   content: '<p>Lorem ipsum dolor sit amet...</p>'
 })|raw}}
@@ -19,6 +27,10 @@
     </div>
 
     <div class="right">
+
+        {{widget('content', 'title3', {
+  content: '<p>Lorem ipsum dolor sit amet...</p>'
+})|raw}}
 
     {{widget('profile', 'profilearea', {
   'profileType':'twitter',
