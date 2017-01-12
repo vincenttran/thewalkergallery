@@ -583,7 +583,24 @@
 .icon--twitter:before,
 .icon--paypal:before,
 .icon--dropbox:before {
-    font-size: 18px;
+    font-size: 24px;
+}
+
+.icon--twitter:before {
+    color: #00aced;
+} 
+
+.icon--facebook:before {
+    color: #3B5998;
+    font-size: 24px;
+}
+
+.template-footer {
+    .icon--twitter:before,
+    .icon--facebook:before {
+        color: white;
+        font-size: 18px;
+    } 
 }
 
 //  7.3  #CLICK TO CALL
@@ -736,7 +753,6 @@ input.input[type=search],
 
 .socialicons__social-link {
     padding: 17px 20px;
-    border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
     color: @color__p--text;
